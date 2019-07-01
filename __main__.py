@@ -27,9 +27,8 @@ screen = pygame.display.set_mode(size)
 
 while True:
     basicfont = pygame.font.SysFont(None, 48)
-    input_text = "Score: "
-    score_text = str(score)
-    input = input_text + score_text
+    
+    input = "Score:  %d" %  score
     text = basicfont.render(input, True, color_text, black)
     textrect = text.get_rect()
     textrect.centerx = screen.get_rect().centerx + 310

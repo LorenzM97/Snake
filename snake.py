@@ -11,7 +11,7 @@ class Snake:
     change_x: int
     change_y: int
     color = 100, 100, 10
-    move = "right"
+    move = "stop"
     childs = []
     last_x: int
     last_y: int
@@ -27,7 +27,6 @@ class Snake:
     def __init__(self):
         self.x = 90
         self.y = 90
-
         self.speed = 0.1
 
     def draw(self, screen, screen_size):
