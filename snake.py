@@ -35,9 +35,7 @@ class Snake:
             map(add, (self.x, self.y), Snake.movements[self.move]))
 
         if(self.x + Snake.size >= screen_size[0]):
-            print("true")
             self.x = self.x - screen_size[0]
-            print()
         if(self.x < 0):
             self.x += screen_size[0]
         if(self.y + Snake.size >= screen_size[1]):
