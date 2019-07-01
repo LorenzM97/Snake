@@ -1,5 +1,6 @@
 import pygame
 
+
 class Child:
 
     last_x: int
