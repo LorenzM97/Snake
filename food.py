@@ -7,7 +7,7 @@ class Food:
     def __init__(self, screen_width, screen_height):
         self.radius = 15
         self.color = 0, 50, 110
-        self.set_position(screen_height, screen_width)
+        self.set_position(screen_width, screen_height)
 
     def draw(self, screen):
         pygame.draw.circle(screen, self.color,

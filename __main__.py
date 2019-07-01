@@ -17,7 +17,6 @@ green = 0
 black = red, blue, green
 color_snake = 100, 100, 10
 color_text = 200, 200, 200
-x, y = 100, 100
 score = 0
 
 snake = snake.Snake()
@@ -33,7 +32,7 @@ while True:
     textrect = text.get_rect()
     textrect.centerx = screen.get_rect().centerx + 310
     textrect.centery = screen.get_rect().centery - 270
-    if (snake.collision_food(food) == 1):
+    if (snake.collision_food(food)):
         food.set_position(width, height)
         score += 1
         print(score)
