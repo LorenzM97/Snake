@@ -27,14 +27,14 @@ screen = pygame.display.set_mode(size)
 
 while True:
     basicfont = pygame.font.SysFont(None, 48)
-    
+
     input = "Score:  %d" %  score
     text = basicfont.render(input, True, color_text, black)
     textrect = text.get_rect()
     textrect.centerx = screen.get_rect().centerx + 310
     textrect.centery = screen.get_rect().centery - 270
     if (snake.collision_food(food) == 1):
-        food.change_position(width, height)
+        food.set_position(width, height)
         score += 1
         print(score)
 
